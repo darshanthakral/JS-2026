@@ -28,7 +28,8 @@
 			"settings": {
 				"editor.fontSize": 16,
 				"terminal.integrated.fontSize": 18,
-				"editor.wordWrap": "on"
+				"editor.wordWrap": "on",
+				"workbench.colorTheme": "Monokai"
 			}
 			
 		}
