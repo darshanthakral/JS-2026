@@ -12,7 +12,10 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+	 "postCreateCommand":{
+		"name": "JavaScript Workspace",
+		"postCreateCommand": "rm -f .git/hooks/pre-push"
+	},
 
 	// Configure tool-specific properties.
 	"customizations": {
