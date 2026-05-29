@@ -24,9 +24,34 @@
 //"darshan" => true
 
 
-let someNumber = 33
-let stringSomeNumber = String(someNumber)
+// let someNumber = 33
+// let stringSomeNumber = String(someNumber)
 
-console.log(typeof stringSomeNumber);
-console.log(stringSomeNumber);
+// console.log(typeof stringSomeNumber);
+// console.log(stringSomeNumber);
 
+
+// ************************* Operations *********************************
+
+
+let value = 3
+let negValue = -value
+console.log(negValue);
+
+let str1 = 1
+let str2 = 2
+let str3 = str1 + str2
+
+console.log(str3);
+
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+
+
+
+
+
+ 
