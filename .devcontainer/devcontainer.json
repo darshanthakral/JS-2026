@@ -12,10 +12,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	 "postCreateCommand":{
-		"name": "JavaScript Workspace",
-		"postCreateCommand": "rm -f .git/hooks/pre-push"
-	},
+	"postCreateCommand": "rm -f .git/hooks/pre-push",
 
 	// Configure tool-specific properties.
 	"customizations": {
@@ -23,7 +20,8 @@
 			"extensions": [
 				"esbenp.prettier-vscode",
 				"vscode-icons-team.vscode-icons",
-				"wayou.vscode-todo-highlight"
+				"wayou.vscode-todo-highlight",
+				"mathematic.vscode-pdf"
 			],
 			"settings": {
 				"editor.fontSize": 16,
@@ -31,9 +29,7 @@
 				"editor.wordWrap": "on",
 				"workbench.colorTheme": "Monokai"
 			}
-			
 		}
-		
 	 }
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
