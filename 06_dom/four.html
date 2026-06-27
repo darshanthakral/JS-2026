@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&C | DOM</title>
+</head>
+<body style="background-color:#2e2e2e; color: #fff">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    /*ADD VALUES*/
+    //Not so optimised approach
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language')
+        .appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("Rust")
+
+    //Much Opitmise approach
+    function addOptimisedLanguage(langName){
+         const li = document.createElement('li');
+         li.appendChild(document.createTextNode(langName))
+         document.querySelector('.language').appendChild(li)
+    }
+
+    addOptimisedLanguage("Golang")
+
+    /*EDIT VALUES - Eg 1*/
+    const secondLang = document.querySelector("li:nth-child(2)")
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)
+
+    /*EDIT VALUES - Eg 2*/
+    const firstLang = document.querySelector("li:nth-child(1)")
+    //const newli = document.createElement('li')
+    newli.outerHTML = "<li>TypeScript</li>"
+    firstLang.replaceWith(newli)
+
+
+    /*REMOVE VALUES*/
+    const lantLang = document.querySelector('li:last-child')
+    lantLang.remove()
+</script>
+</html>
